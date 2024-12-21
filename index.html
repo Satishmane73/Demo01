@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GaneshTemplate</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="img">
+            <img src="./img/ganpati.png" alt="">
+        </div>
+        <div class="heading">
+            <h1>Ganesh<br>Chaturthi</h1>
+        </div>
+        <div class="para">
+            <p>May Lord Ganesha bring peace<br>prosperity, and happyness to you<br> and your frends</p>
+        </div>
+        <div class="button">
+            <button id="myButton">Click Me</button>
+            <p class="p" id="message"></p>
+
+            <script>
+                const button = document.getElementById("myButton");
+                const messageParagraph = document.getElementById("message");
+
+                button.addEventListener("click", () => {
+                    messageParagraph.textContent = "May Lord Ganesha bless you with wisdom and succsess";
+                });
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
